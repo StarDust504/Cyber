@@ -1,0 +1,91 @@
+body {
+    background-color: #FEEDE8;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 48px;
+    justify-content: space-between;
+}
+
+.leftSide, .rightSide {
+    width: 278px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+}
+
+.rightSide {
+    width: 178px;
+}
+
+.catalogueHeader {
+    height: 483px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+}
+
+.headerText {
+    height: 210px;
+    width: 691px;
+    background-color: #AFAFAF;
+    margin-right: 374px;
+    margin-left: 375px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filt, .clear, .sort {
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    border: 1px solid #B8B8B8;
+}
+
+.filt, .sort {
+    width: 304px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.clear {
+    width: calc(100% - 608px);
+    margin: 0;
+    padding-left: 46px;
+}
+
+.catalogue {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 1539px;
+}
+
+.row1, .row2, .row3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+s
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: #F6E5E0;
+    height: 262px;
+    width: auto;
+}
