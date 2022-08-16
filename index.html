@@ -3,83 +3,221 @@
     <head>
         <title>Кибер-Ателье</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" media="screen and (min-device-width: 769px)" href="style.css">
+        <link rel="stylesheet" media="screen and (max-device-width: 768px)" href="mobileStyle.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     </head>
-    <body>
+    <body class="disable-dbl-tap-zoom">
+        <script language="JavaScript">
+            function nextDres(){
+                let radios = document.querySelectorAll('input[type="radio"]');
+                let radiosLen = radios.length;
+                let value = 0;
+                for (let radio of radios) {
+		            if (radio.checked) {;
+                        value = radio.value;
+                        radio.checked = false;
+		            }
+	            }
+                value++;
+                if(value > radiosLen){
+                    value = 1;
+                }
+                for (let radio of radios) {
+                    if(radio.value == value){
+                        radio.checked = true;
+                        if(radio.value == 1){
+                            document.getElementById("s1").style.marginLeft = '0';
+                        }
+                        else if(radio.value == 2){
+                            document.getElementById("s1").style.marginLeft = '-25%';
+                        }
+                        else if(radio.value == 3){
+                            document.getElementById("s1").style.marginLeft = '-50%';
+                        }
+                        else if(radio.value == 4){
+                            document.getElementById("s1").style.marginLeft = '-75%';
+                        }
+                        
+                    }
+                }
+                
+            }
+
+
+            function prevDres(){
+                let radios = document.querySelectorAll('input[type="radio"]');
+                let radiosLen = radios.length;
+                let value = 0;
+                for (let radio of radios) {
+		            if (radio.checked) {;
+                        value = radio.value;
+                        radio.checked = false;
+		            }
+	            }
+                value--;
+                if(value == 0){
+                    value = radiosLen;
+                }
+                for (let radio of radios) {
+                    if(radio.value == value){
+                        radio.checked = true;
+                        if(radio.value == 1){
+                            document.getElementById("s1").style.marginLeft = '0';
+                        }
+                        else if(radio.value == 2){
+                            document.getElementById("s1").style.marginLeft = '-25%';
+                        }
+                        else if(radio.value == 3){
+                            document.getElementById("s1").style.marginLeft = '-50%';
+                        }
+                        else if(radio.value == 4){
+                            document.getElementById("s1").style.marginLeft = '-75%';
+                        }
+                        
+                    }
+                }
+                
+            }
+        </script>
+
+
+
         <header>
             <div class="leftSide">
-                <p>Главная</p>
-                <p>Каталог</p>
+                <a href="">Главная</a>
+                <a href="">Каталог</a>
+                <a href="">Контакты</a>
             </div>
             <div class="rightSide">
-                <p>Войти</p>
+                <a href="">AR-подиум</a>
+            </div>
+            <div class="dropdown">
+                <button class="dropBtn">
+                    <div class="lines">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </button>
+                <div class="dropdownContent">
+                    <a href="">Главная</a>
+                    <a href="">Каталог</a>
+                    <a href="">Контакты</a>
+                    <a href="">AR-подиум</a>
+                </div>
             </div>
         </header>
-        <div class="catalogueHeader">
-            <div class="headerText">
-                
+        <div class="infoTitle">
+            <div class="welcome">
+                <p>Добро пожаловать в КиберАтелье!</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="infoText">
+                <p>В Приморье официально запустили стратегическую программу «Киберателье и креативные индустрии Приморья». Ведомственный проект, рассчитанный до 2030 года, по оценке экспертов, поможет не только перевести легкую промышленность края на новый уровень, но и оказать существенное воздействие на экономику региона в целом.</p>
+                <p>Поэтому ниже мы готовы познакомить Вас с каталогом одежды самых разных дизайнеров и ателье. Надеимся, что Вы найдете что-то подходящее</p>
+            </div>
+        </div>
+        <div class="infoMobile">
+            <div class="infoText">
+                <p>В Приморье официально запустили стратегическую программу «Киберателье и креативные индустрии Приморья». Ведомственный проект, рассчитанный до 2030 года, по оценке экспертов, поможет не только перевести легкую промышленность края на новый уровень, но и оказать существенное воздействие на экономику региона в целом.</p>
+                <p>Поэтому ниже мы готовы познакомить Вас с каталогом одежды самых разных дизайнеров и ателье. Надеимся, что Вы найдете что-то подходящее</p>
             </div>
         </div>
         <div class="filter">
             <div class="filt">
                 <p>Фильтры (0)</p>
-                <img src="images/Arrow 1.svg" height="auto" width="10px">
+                <img src="images/Arrow 1.svg" height="auto" width="20px">
             </div>
             <div class="clear">
                 <p>Очистить фильтры</p>
             </div>
             <div class="sort">
                 <p>Сортировать</p>
-                <img src="images/Arrow 1.svg" height="auto" width="10px">
+                <img src="images/Arrow 1.svg" height="auto" width="20px">
             </div>
         </div>
         <div class="catalogue">
-            <div class="row1">
-                <div class="card1">
-                    <img src="images/image 1.svg" width="386px" height="386px">
-                    <p>Наименование товара 1</p>
-                </div>
-                <div class="card2">
-                    <img src="images/image 2.svg" width="386px" height="386px">
-                    <p>Наименование товара 2</p>
-                </div>
-                <div class="card3">
-                    <img src="images/image 3.svg" width="386px" height="386px">
-                    <p>Наименование товара 3</p>
+            <div class="rectangle">
+                <div class="arrowHolder">
+                    <div class="button prev-button" onclick="prevDres()">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="slides-container">
+
+                        <input type="radio" name="r" id="dress1" value="1" checked>
+                        <input type="radio" name="r" id="dress2" value="2">
+                        <input type="radio" name="r" id="dress3" value="3">
+                        <input type="radio" name="r" id="dress4" value="4">
+
+
+                    <div class="dres-imgs">
+                        <div class="slide-image" id="s1">
+                            <img src="images/image1.svg" alt="1">
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/image2.svg" alt="2">
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/image3.svg" alt="3">
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/image4.svg" alt="4">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="button next-button" onclick="nextDres()">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
                 </div>
             </div>
-            <div class="row2">
-                <div class="card4">
-                    <img src="images/image 4.svg" width="386px" height="386px">
-                    <p>Наименование товара 4</p>
-                </div>
-                <div class="card5">
-                    <img src="images/image 5.svg" width="386px" height="386px">
-                    <p>Наименование товара 5</p>
-                </div>
-                <div class="card6">
-                    <img src="images/image 6.svg" width="386px" height="386px">
-                    <p>Наименование товара 6</p>
-                </div>
+            <button class="catBtn">
+                <a href="">Перейти на страницу каталога</a>
+            </button>
+        </div>
+
+        <footer>
+            <div class="topMenu">
+                <a href="">Главная</a>
+                <a href="">Каталог</a>
+                <a href="">Контакты</a>
+                <a href="">AR-Подиум</a>
             </div>
-            <div class="row3">
-                <div class="card7">
-                    <img src="images/image 7.svg" width="386px" height="386px">
-                    <p>Наименование товара 7</p>
-                </div>
-                <div class="card8">
-                    <img src="images/image 8.svg" width="386px" height="386px">
-                    <p>Наименование товара 8</p>
-                </div>
-                <div class="card9">
-                    <img src="images/image 9.svg" width="386px" height="386px">
-                    <p>Наименование товара 9</p>
-                </div>
+                <a class="footBtn"href="https://t.me/cyberstudio_prim">
+                    <button class="footerBtn">Присоединяйся к сообществу Киберателье</button>
+                </a>
+            <div class="middleMenu">
+                <a href="https://cyber-brand.ru/o-proekte/">Информация о проекте</a>
+            </div>
+            <div class="bottomMenu">
+                <p>Сайт был создан студентами</p>
+            </div>
+            <div class="FEFU">
+                <img src="images/logo.svg">
+            </div>
+        </footer>
+
+        <div class="footerMobile">
+            <a class="footBtn"href="https://t.me/cyberstudio_prim">
+                <button class="footerBtn">Присоединяйся к сообществу Киберателье</button>
+            </a>
+            <div class="topMenu">
+                <a href="">Главная</a>
+                <a href="">Каталог</a>
+                <a href="">AR-Подиум</a>
+            </div>
+            <div class="middleMenu">
+                <a class="contacts" href="">Контакты</a>
+                <a href="https://cyber-brand.ru/o-proekte/">Информация о проекте</a>
+            </div>
+            <div class="bottomMenu">
+                <p>Сайт был создан студентами</p>
+            </div>
+            <div class="FEFU">
+                <img src="images/logo.svg">
             </div>
         </div>
-        <footer>
-
-        </footer>
     </body>
 </html>
