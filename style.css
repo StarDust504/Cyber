@@ -162,7 +162,7 @@ header {
 }
 
 .slides-container {
-    height: 385px;
+    height: 405px;
     width: 386px;
     position: relative;
     overflow: hidden;
@@ -178,6 +178,14 @@ header {
     height: 100%;
     width: 25%;
     transition: all .6s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Domine';
+    font-size: 20px;
+
 }
 
 .slide-image img {
@@ -304,6 +312,15 @@ footer {
 .FEFU img{
     width: auto;
     height: 90px;    
+}
+
+.catBtn {
+    width: calc(100% / 4);
+    height: 72px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    background-color: #E5E5E5;
+    border: 1px solid #5B5553;
 }
 /* #s1{
     transform: all .6s ease;
