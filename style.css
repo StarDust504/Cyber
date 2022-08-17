@@ -145,7 +145,7 @@ header {
 
 .arrowHolder {
     position: absolute;
-    width: 1060px;
+    width: calc(100% / 0.8);
     height: 211.64px;
     background: #B1A7A5;
     backdrop-filter: blur(100px);
