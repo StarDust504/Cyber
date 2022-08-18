@@ -98,22 +98,7 @@ header {
     display: none;
 }
 
-.filter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #E5E5E5;
-}
 
-.filt, .clear, .sort {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px ;
-    border: 1px solid #B8B8B8;
-    width: calc(100% / 3);
-}
 
 .catalogue {
     height: 700px;
