@@ -79,18 +79,24 @@ a {
         flex-direction: column;
         justify-content: space-around;
     
-        width: 266px;
-        height: 275px;
+        width: 366px;
+        height: 400px;
         background-color: #E5E5E5;
-        padding-left: 14px;
         
+    }
+
+    .dropdown:hover .main {
+        margin-top: 15px;
     }
     
     .dropdown:hover .dropdownContent a {
         font-family: 'Montserrat', sans-serif;
-        font-size: 30px;
+        font-size: 35px;
         text-decoration: none;
         color: inherit;
+        border-bottom: 1px solid #5B5553;
+        padding-left: 50px;
+
     }
     
     .dropdown:hover .line1 {
@@ -150,7 +156,7 @@ a {
         min-height: calc(100% / 2);
         font-family: 'Montserrat', sans-serif;
         font-size: 4vw;
-        line-height: 40px;
+        line-height: 5vw;
         padding-left: 10%;
         padding-right: 10%;
         
@@ -288,11 +294,9 @@ a {
     }
     
     .footerBtn {
-        width: 100%;
-        height: 100%;
         font-size: 30px;
-        background-color: #E5E5E5;
-        text-decoration: underline;
+        background-color: #E5E5E5;  
+        font-weight: bold;
     }
     
     a {
@@ -339,7 +343,7 @@ a {
     }
 }
 
-@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
     /*header tablet*/
     header {
         display: flex;
@@ -356,15 +360,18 @@ a {
         display: none;
     }
     
-    .leftSide, .rightSide {
+    .leftSide {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        width: calc(100% / 2);
+        width: calc(100% / 3);
         align-items: center;
     }
     .rightSide {
-        width: calc(100% / 7);
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 5%;
+        align-items: center;
     }
     /*main tablet*/
     .infoTitle {
@@ -547,11 +554,6 @@ a {
     .footerMobile {
         display: none;
     }
-
-    
-    .footerMobile {
-        display: none;
-    }
     
     footer {
         display: flex;
@@ -569,12 +571,6 @@ a {
     
         width: calc(100% / 1);
     }
-    .bottomMenu {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
     
     .footBtn {
         width: calc(100% / 2);
@@ -583,20 +579,21 @@ a {
     
     .footerBtn {
         width: 100%;
-        height: 100%;
-        font-size: 20px;
+        font-size: 23px;
         font-family: 'Montserrat', sans-serif;
-        text-decoration: underline;
         background-color: #E5E5E5;
         border: 1px solid #5B5553;
+        padding: 15px 15px;
+        font-weight: bold;
     }
     
     .middleMenu {
-        width: calc(100% / 2);
+        width: calc(100% / 1.4);
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         text-decoration: underline;
     }
+    
     
     .FEFU img{
         width: auto;
@@ -622,15 +619,18 @@ a {
         display: none;
     }
     
-    .leftSide, .rightSide {
+    .leftSide {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        width: calc(100% / 2);
+        width: calc(100% / 2.5);
         align-items: center;
     }
     .rightSide {
-        width: calc(100% / 7);
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 5%;
+        align-items: center;
     }
 
     /*main laptop small*/
@@ -849,18 +849,18 @@ a {
     
     .footerBtn {
         width: 100%;
-        height: 100%;
-        font-size: 20px;
+        font-size: 23px;
         font-family: 'Montserrat', sans-serif;
-        text-decoration: underline;
         background-color: #E5E5E5;
         border: 1px solid #5B5553;
+        padding: 15px 15px;
+        font-weight: bold;
     }
     
     .middleMenu {
-        width: calc(100% / 2);
+        width: calc(100% / 1.4);
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         text-decoration: underline;
     }
     
@@ -887,15 +887,18 @@ a {
         display: none;
     }
     
-    .leftSide, .rightSide {
+    .leftSide {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        width: calc(100% / 2);
+        width: calc(100% / 2.5);
         align-items: center;
     }
     .rightSide {
-        width: calc(100% / 7);
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 5%;
+        align-items: center;
     }
 
     /*main desktop*/
@@ -1115,18 +1118,18 @@ a {
     
     .footerBtn {
         width: 100%;
-        height: 100%;
-        font-size: 20px;
+        font-size: 23px;
         font-family: 'Montserrat', sans-serif;
-        text-decoration: underline;
         background-color: #E5E5E5;
         border: 1px solid #5B5553;
+        padding: 15px 15px;
+        font-weight: bold;
     }
     
     .middleMenu {
-        width: calc(100% / 2);
+        width: calc(100% / 1.4);
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         text-decoration: underline;
     }
     
@@ -1153,15 +1156,19 @@ a {
         display: none;
     }
     
-    .leftSide, .rightSide {
+    .leftSide {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        width: calc(100% / 2);
+        justify-content: space-between;
+        width: calc(100% / 3);
         align-items: center;
     }
+
     .rightSide {
-        width: calc(100% / 7);
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 5%;
+        align-items: center;
     }
     /*main big screen*/
     .infoTitle {
@@ -1344,11 +1351,6 @@ a {
     .infoMobile {
         display: none;
     }
-
-
-    .footerMobile {
-        display: none;
-    }
     
     footer {
         display: flex;
@@ -1372,15 +1374,6 @@ a {
         height: 76px;
     }
     
-    .footerBtn {
-        width: 100%;
-        height: 100%;
-        font-size: 20px;
-        font-family: 'Montserrat', sans-serif;
-        text-decoration: underline;
-        background-color: #E5E5E5;
-        border: 1px solid #5B5553;
-    }
     .bottomMenu {
         width: 80%;
         display: flex;
@@ -1388,10 +1381,20 @@ a {
         justify-content: space-around;
     }
     
+    .footerBtn {
+        width: 100%;
+        font-size: 23px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #E5E5E5;
+        border: 1px solid #5B5553;
+        padding: 15px 15px;
+        font-weight: bold;
+    }
+    
     .middleMenu {
-        width: calc(100% / 2);
+        width: calc(100% / 1.4);
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         text-decoration: underline;
     }
     
