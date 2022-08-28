@@ -366,7 +366,7 @@ a {
         padding-left: 38px;
         justify-content: space-between;
         background-color: #B1A7A5;
-        font-size: 24px;
+        font-size: 2vw;
         font-family: 'Montserrat', sans-serif;
     }
     
@@ -601,7 +601,7 @@ a {
     .middleMenu {
         width: calc(100% / 1.4);
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         text-decoration: underline;
     }
     
@@ -622,7 +622,7 @@ a {
         padding-left: 38px;
         justify-content: space-between;
         background-color: #B1A7A5;
-        font-size: 24px;
+        font-size: 1.9vw;
         font-family: 'Montserrat', sans-serif;
     }
     
@@ -869,7 +869,7 @@ a {
     .middleMenu {
         width: calc(100% / 1.4);
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         font-weight: bold;
     }
     
@@ -888,7 +888,7 @@ a {
         padding-left: 38px;
         justify-content: space-between;
         background-color: #B1A7A5;
-        font-size: 24px;
+        font-size: 1.9vw;
         font-family: 'Montserrat', sans-serif;
     }
     
@@ -1140,7 +1140,7 @@ a {
     .middleMenu {
         width: calc(100% / 1.4);
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         font-weight: bold;
     }
     
@@ -1159,7 +1159,7 @@ a {
         padding-left: 38px;
         justify-content: space-between;
         background-color: #B1A7A5;
-        font-size: 24px;
+        font-size: 1.9vw;
         font-family: 'Montserrat', sans-serif;
     }
     
@@ -1410,7 +1410,7 @@ a {
     .middleMenu {
         width: calc(100% / 1.4);
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         font-weight: bold;
     }
     
